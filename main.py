@@ -45,7 +45,9 @@ def draw_map(camps, screen):
 def main():
     pygame.init()
     screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-    pygame.display.set_caption("Simulation de jeu de territoire")
+    pygame.display.set_caption("Territory War")
+    pygame_icon = pygame.image.load('waricon.png')
+    pygame.display.set_icon(pygame_icon)
 
     camps = initialize_camps()
 
